@@ -5,7 +5,7 @@ const packages = [
     formValue: "Basic Website",
     tag: "For the essential pages",
     description: "A simple, professional website for businesses that need to establish an online presence.",
-    price: "US$25 / month",
+    price: "$25 / month (plus a one-time US$150 setup fee)",
     pages: "One-page professional website",
     items: ["Customised design using your business branding", "Mobile and tablet-friendly layout", "Business introduction, services and contact information", "Contact or enquiry form and social media links", "Basic search engine optimisation (SEO) setup", "Website hosting and SSL"]
   },
@@ -14,7 +14,7 @@ const packages = [
     formValue: "Advanced Website",
     tag: "For a broader website",
     description: "A more comprehensive website for businesses that need additional pages and flexibility to showcase their products and services.",
-    price: "US$59 / month",
+    price: "$59 / month (plus a one-time US$150 setup fee)",
     featured: true,
     pages: "Up to five website pages",
     items: ["Everything included in Basic", "More tailored website design", "Separate About, Services and Contact pages where appropriate", "Image gallery or portfolio", "Blog or news section if required", "Additional enquiry features", "Enhanced on-page SEO setup"]
