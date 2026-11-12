@@ -53,4 +53,6 @@
 .brand-mark__spark{fill:var(--orange)}
 .brand-footer .brand-mark__spark{fill:#e88762}
 @media(max-width:650px){.brand-mark{width:35px;height:32px}}
+.thanks-title{font:600 clamp(43px,5vw,66px)/1.04 var(--display);letter-spacing:-.065em;margin:0;max-width:760px}
+
 
