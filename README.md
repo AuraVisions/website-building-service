@@ -11,17 +11,17 @@ A static business website built with HTML, CSS and JavaScript. It has no build s
 
 ## Review locally
 
-Open `index.html` in a browser. The Google Fonts connection needs internet access; system font fallbacks are used when the fonts cannot load. The enquiry form opens the visitor’s email app with a prepared message and a blank recipient. The visitor must enter the business email address and send it; this site does not store or deliver submissions. To prefill a recipient automatically, update the `mailto:` URL in `script.js` before launch.
+Open `index.html` in a browser. The Google Fonts connection needs internet access; system font fallbacks are used when the fonts cannot load. The enquiry form uses Netlify Forms and submits to the site’s Netlify form handler when deployed.
 
 ## Deploy
 
 ### Netlify from GitHub
 
-Connect this repository to Netlify. Use the repository root as the publish directory and leave the build command empty. Netlify can publish changes automatically when you push to the connected branch.
+Connect this repository to Netlify. Use the repository root as the publish directory and leave the build command empty. Enable form detection in the Netlify dashboard and configure email notifications there if enquiries should be emailed. Netlify can publish changes automatically when you push to the connected branch.
 
 ### Hostinger
 
-Upload the project files to the website’s document root, usually `public_html`, using Hostinger File Manager or FTP. Keep `index.html`, `styles.css`, `script.js` and `favicon.svg` together in that folder.
+Upload the project files to the website’s document root (usually `public_html`) using Hostinger File Manager or FTP. Keep `index.html`, `styles.css`, `script.js` and `favicon.svg` together in that folder.
 
 ## Updating package details
 
