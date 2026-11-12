@@ -61,20 +61,5 @@ document.addEventListener("click", event => {
   if (packageLink) document.querySelector('[name="package"]').value = packageLink.dataset.package;
 });
 
-document.querySelector("#enquiry-form").addEventListener("submit", event => {
-  event.preventDefault();
-  const form = new FormData(event.currentTarget);
-  const fields = [
-    ["Name", form.get("name")],
-    ["Email", form.get("email")], ["Type of business", form.get("type")],
-    ["Website requirement", form.get("need")], ["Website type", form.get("siteType")], ["Preferred package", form.get("package")],
-    ["Additional information", form.get("message")]
-  ];
-  const body = fields.map(([label, value]) => `${label}: ${value || "Not provided"}`).join("\n");
-  const subject = `Website enquiry — ${form.get("name")}`;
-  document.querySelector("#form-feedback").textContent = "Add the business email address and send the message to complete your enquiry. This site doesn’t store submissions.";
-  window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-});
-
 document.querySelector("#year").textContent = new Date().getFullYear();
 
